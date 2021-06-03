@@ -1,0 +1,89 @@
+﻿<Page x:Class="TestTaskPr.Pages.PageBooks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestTaskPr.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageBooks">
+    <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="50"></RowDefinition>
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <StackPanel Orientation="Horizontal">
+            <Button Background="#ab8c44" x:Name="btnAdd" Margin="5" Click="btnAdd_Click">Создать</Button>
+           
+            <Button Background="Red" x:Name="btnDel" Margin="5" Click="btnDel_Click">Удалить</Button>
+    </StackPanel>
+    <DataGrid Grid.Row="1" x:Name="DGBooks" AutoGenerateColumns="False" AlternatingRowBackground="#fff1d1" IsReadOnly="True">
+
+        <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <Image x:Name="cellImage" MaxHeight="200" MaxWidth="100" Source="{Binding photo}"></Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Название" Binding="{Binding name}" >
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Автор" Binding="{Binding author}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Categoryes.nameCat}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="тэг" Binding="{Binding Tags.nameTag}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Полка" Binding="{Binding Shielfs.name}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Читатель" Binding="{Binding Reader.lastName}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Background="#ab8c44" x:Name="btnEdit" Margin="5" Click="btnEdit_Click">Ред.</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+    </Grid>
+</Page>
