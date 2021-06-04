@@ -7,7 +7,7 @@
       <Diagram DiagramId="c176c4cf02b84a0abbbdf8575c963ef5" Name="Diagram1">
         <EntityTypeShape EntityType="DBLibraryModel.Books" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DBLibraryModel.Categoryes" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBLibraryModel.Reader" Width="1.5" PointX="6.875" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBLibraryModel.Reader" Width="1.5" PointX="6.625" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="DBLibraryModel.Shielfs" Width="1.5" PointX="0.625" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DBLibraryModel.Tags" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
         <AssociationConnector Association="DBLibraryModel.FK_Books_Categoryes" ManuallyRouted="false" />

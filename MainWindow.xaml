@@ -42,19 +42,21 @@
                         </StackPanel>
                     </ListViewItem>
 
-                    <ListViewItem Height="40" >
+                    <ListViewItem Height="40" MouseDoubleClick="ListViewItem_MouseDoubleClick_1" >
                         <StackPanel Orientation="Horizontal" >
                             <Image Source="/Icos/pricetag_83842.png" ></Image>
-                            <TextBlock x:Name="txtTag" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10,0,0,0" FontSize="20" FontFamily="Century Gothic" FontWeight="Bold">Тэги</TextBlock>
+                            <TextBlock x:Name="txtTag1" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10,0,0,0" FontSize="20" FontFamily="Century Gothic" FontWeight="Bold">Тэги</TextBlock>
                         </StackPanel>
                     </ListViewItem>
 
-                    <ListViewItem Height="40" >
+
+                    <ListViewItem Height="40" MouseDoubleClick="ListViewItem_MouseDoubleClick_2" >
                         <StackPanel Orientation="Horizontal" >
-                            <Image Source="/Icos/category_icon-icons.com_71725.png" ></Image>
-                            <TextBlock x:Name="txtCat" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10,0,0,0" FontSize="20" FontFamily="Century Gothic" FontWeight="Bold">Категории</TextBlock>
+                            <Image Source="/Icos/history-clock-button_icon-icons.com_72701.png" ></Image>
+                            <TextBlock x:Name="txtJun" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10,0,0,0" FontSize="20" FontFamily="Century Gothic" FontWeight="Bold">Журнал</TextBlock>
                         </StackPanel>
                     </ListViewItem>
+
                 </ListView>
             </StackPanel>
         </Grid>

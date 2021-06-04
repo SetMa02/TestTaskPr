@@ -9,15 +9,44 @@
       Title="PageTags">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <Button Background="#ab8c44" x:Name="btnAdd" Margin="5" Click="btnAdd_Click">Создать</Button>
-            <Button Background="Red" x:Name="btnDel" Margin="5" Click="btnDel_Click">Удалить</Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="30">Категории</TextBlock>
         </StackPanel>
-        
-        
+        <StackPanel HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock FontSize="30">Теги</TextBlock>
+        </StackPanel>
+
+
+        <DataGrid Margin="10" Grid.Row="1" x:Name="DGCat" Height="300" FocusableChanged="DGCat_FocusableChanged" AutoGenerateColumns="False" ColumnWidth="*" SelectionChanged="DGCat_SelectionChanged" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding nameCat}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Margin="10" Grid.Row="1" x:Name="DGTags" Height="300" HorizontalAlignment="Center" SelectionChanged="DGTags_SelectionChanged" AutoGenerateColumns="False" FocusableChanged="DGCat_FocusableChanged" ColumnWidth="*" Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding nameTag}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <Button x:Name="btnAddGenre" Click="btnAddGenre_Click">Добавить Категорию</Button>
+            <Button x:Name="btnDelGenre" Background="Red" Margin="10" Click="btnDelGenre_Click">Удалить</Button>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1">
+            <Button x:Name="btnAddPublisher" Click="btnAddPublisher_Click">Добавить тег</Button>
+            <Button x:Name="btnDelPublisher" Background="Red" Margin="10" Click="btnDelPublisher_Click">Удалить</Button>
+        </StackPanel>
     </Grid>
 </Page>

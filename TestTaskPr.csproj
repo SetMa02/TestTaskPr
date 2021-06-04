@@ -89,6 +89,9 @@
     <Compile Include="Pages\PageCateg.xaml.cs">
       <DependentUpon>PageCateg.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PageJun.xaml.cs">
+      <DependentUpon>PageJun.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageReaderEdit.xaml.cs">
       <DependentUpon>PageReaderEdit.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,12 @@
     </Compile>
     <Compile Include="Tags.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowCat.xaml.cs">
+      <DependentUpon>WindowCat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowTag.xaml.cs">
+      <DependentUpon>WindowTag.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +141,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageJun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageReaderEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +154,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageTags.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowCat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowTag.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -201,6 +222,7 @@
     <Resource Include="Icos\pricetag_83842.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Icos\history-clock-button_icon-icons.com_72701.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
