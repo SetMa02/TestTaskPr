@@ -40,13 +40,13 @@
 
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
-            <Button x:Name="btnAddGenre" Click="btnAddGenre_Click">Добавить Категорию</Button>
+            <Button Background="#ab8c44" x:Name="btnAddGenre" Click="btnAddGenre_Click">Добавить Категорию</Button>
             <Button x:Name="btnDelGenre" Background="Red" Margin="10" Click="btnDelGenre_Click">Удалить</Button>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1">
-            <Button x:Name="btnAddPublisher" Click="btnAddPublisher_Click">Добавить тег</Button>
-            <Button x:Name="btnDelPublisher" Background="Red" Margin="10" Click="btnDelPublisher_Click">Удалить</Button>
+            <Button Background="#ab8c44" x:Name="btnAddPublisher" Click="btnAddPublisher_Click">Добавить тег</Button>
+            <Button  x:Name="btnDelPublisher" Background="Red" Margin="10" Click="btnDelPublisher_Click">Удалить</Button>
         </StackPanel>
     </Grid>
 </Page>

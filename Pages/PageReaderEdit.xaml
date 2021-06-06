@@ -37,7 +37,7 @@
                 </StackPanel>
             </Border>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="btnSave" Margin="10" Click="btnSave_Click">Сохранить</Button>
+                <Button Background="#ab8c44" x:Name="btnSave" Margin="10" Click="btnSave_Click">Сохранить</Button>
                 <Button x:Name="btnClear" Margin="10" Click="btnClear_Click" Background="#ff4500">Очистить</Button>
             </StackPanel>
         </StackPanel>

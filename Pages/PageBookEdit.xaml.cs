@@ -5,6 +5,7 @@ using System.Data.Entity.Validation;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestTaskPr.Windows;
 
 namespace TestTaskPr.Pages
 {
@@ -33,6 +35,8 @@ namespace TestTaskPr.Pages
             cmbCat.ItemsSource = context.Categoryes.ToList();
             cmbShielf.ItemsSource = context.Shielfs.ToList();
             cmbTag.ItemsSource = context.Tags.ToList();
+
+         
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -73,6 +77,19 @@ namespace TestTaskPr.Pages
                 addBook.photo = image;
                 imagePhoto.Source = new BitmapImage(new Uri(nameFile));
             }
+        }
+
+        private void btnAddTag_Click(object sender, RoutedEventArgs e)
+        {
+            WindowTag windowTag = new WindowTag();
+            windowTag.Show();
+            if (!windowTag.IsActive)
+                cmbTag.ItemsSource = context.Tags.ToList();
+        }
+
+        private void cmbTag_MouseEnter(object sender, MouseEventArgs e)
+        {
+            cmbTag.ItemsSource = context.Tags.ToList();
         }
     }
 }

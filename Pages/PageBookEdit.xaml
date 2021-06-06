@@ -24,7 +24,8 @@
                         <TextBlock FontSize="20" Margin="5">Категория:</TextBlock>
                         <ComboBox x:Name="cmbCat" Width="100" SelectedItem="{Binding Categoryes}" DisplayMemberPath="nameCat"></ComboBox>
                         <TextBlock FontSize="20" Margin="5">Тэг:</TextBlock>
-                        <ComboBox x:Name="cmbTag" Width="75" SelectedItem="{Binding Tags}" DisplayMemberPath="nameTag"></ComboBox>
+                        <ComboBox MouseEnter="cmbTag_MouseEnter" x:Name="cmbTag" Width="75" SelectedItem="{Binding Tags}" DisplayMemberPath="nameTag"></ComboBox>
+                        <Button Background="#ab8c44" x:Name="btnAddTag"  Click="btnAddTag_Click" Margin="10,0,0,0" FontSize="25" Width="25" Padding="0,-5,0,0">+</Button>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
@@ -33,7 +34,7 @@
                         <ComboBox x:Name="cmbShielf" Width="150" SelectedItem="{Binding Shielfs}" DisplayMemberPath="name"></ComboBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
-                        <Button Margin="25,5,5,5" x:Name="btnImage" Click="btnImage_Click" >Обложка</Button>
+                        <Button Background="#ab8c44" Margin="25,5,5,5" x:Name="btnImage" Click="btnImage_Click" >Обложка</Button>
                         <Image x:Name="imagePhoto" Source="{Binding photo}" MaxWidth="100" MaxHeight="100"></Image>
                     </StackPanel>
 
@@ -41,7 +42,7 @@
                 </StackPanel>
             </Border>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="btnSave" Margin="10" Click="btnSave_Click">Сохранить</Button>
+                <Button Background="#ab8c44" x:Name="btnSave" Margin="10" Click="btnSave_Click">Сохранить</Button>
                 <Button x:Name="btnClear" Margin="10" Click="btnClear_Click" Background="#ff4500">Очистить</Button>
             </StackPanel>
         </StackPanel>

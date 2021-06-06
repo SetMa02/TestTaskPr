@@ -27,7 +27,7 @@
                         <Image Source="/Icos/Menu_icon_icon-icons.com_71858.png" Width="45" ></Image>
                     </Button>
                 </Grid>
-                <ListView BorderBrush="Transparent" Background="Transparent">
+                <ListView BorderBrush="Transparent" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <ListViewItem Height="40" MouseDoubleClick="ListViewItem_MouseDoubleClick">
                         <StackPanel Orientation="Horizontal" >
                             <Image Source="/Icos/book_dictionary_icon-icons.com_66121.png" ></Image>
