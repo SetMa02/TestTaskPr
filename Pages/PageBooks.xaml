@@ -18,7 +18,7 @@
            
             <Button Background="Red" x:Name="btnDel" Margin="5" Click="btnDel_Click">Удалить</Button>
     </StackPanel>
-    <DataGrid Grid.Row="1" x:Name="DGBooks" AutoGenerateColumns="False" AlternatingRowBackground="#fff1d1" IsReadOnly="True">
+    <DataGrid Grid.Row="1" x:Name="DGBooks" AutoGenerateColumns="False" MaxHeight="450" ScrollViewer.HorizontalScrollBarVisibility="Hidden" AlternatingRowBackground="#fff1d1" IsReadOnly="True">
 
         <DataGrid.Columns>
                 <DataGridTemplateColumn>

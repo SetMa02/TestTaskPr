@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestTaskPr.Windows"
         mc:Ignorable="d"
-        Title="WindowCat" Height="200" Width="300">
+        Title="WindowCat" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Margin="5" FontSize="14">Наименование категории:</TextBlock>
             <TextBox Margin="5" FontSize="14" x:Name="txtGenre"></TextBox>
-            <Button x:Name="btnSave" Click="btnSave_Click">Сохранить</Button>
+            <Button Background="#ab8c44" x:Name="btnSave" Click="btnSave_Click">Сохранить</Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -67,7 +67,7 @@ namespace TestTaskPr.Pages
         private void btnImage_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Image files: *.jpg, *.png| *.jpg; *.png";
+            openFile.Filter = "Image files: *.jpg, *.png, *.jpeg| *.jpg; *.png; *.jpeg" ;
             openFile.ShowDialog();
             if (openFile.FileName.Length != 0)
             {
